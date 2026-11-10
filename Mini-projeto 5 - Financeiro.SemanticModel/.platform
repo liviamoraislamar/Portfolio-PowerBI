@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Mini-projeto 5 - Financeiro"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0c8353e8-2cb8-40a9-9014-9f9a7dd3f2fd"
+  }
+}
