@@ -3,9 +3,9 @@
   "name": "d360ec782e0a0b933411",
   "position": {
     "x": 0,
-    "y": 539.26916646763789,
+    "y": 588.79388583711489,
     "z": 3000,
-    "height": 515.42393121566761,
+    "height": 465.89921184619061,
     "width": 603.46787676140434,
     "tabOrder": 3000
   },
@@ -69,6 +69,48 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "visualContainerObjects": {
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total de Receitas por Componente'"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   },

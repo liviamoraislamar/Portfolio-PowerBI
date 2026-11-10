@@ -5,7 +5,7 @@
     "x": 0,
     "y": 0,
     "z": 0,
-    "height": 132.06591831860521,
+    "height": 172.41939336040124,
     "width": 280.64007642703609,
     "tabOrder": 0
   },
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "MedidasIndicadoresFinanceiros.TotalReceitas",
-              "nativeQueryRef": "TotalReceitas"
+              "nativeQueryRef": "Total de Receitas",
+              "displayName": "Total de Receitas"
             }
           ]
         }
@@ -50,6 +51,47 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "27D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "MedidasIndicadoresFinanceiros.TotalReceitas"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "MedidasIndicadoresFinanceiros.TotalReceitas"
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   }

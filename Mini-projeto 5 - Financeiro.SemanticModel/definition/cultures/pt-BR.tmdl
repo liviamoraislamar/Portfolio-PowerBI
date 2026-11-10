@@ -1,2 +1,1738 @@
 cultureInfo pt-BR
 
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dados_financeiro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DadosFinanceiros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dados financeiro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dado financeiro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "DadosFinanceiros": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dados_financeiro.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DadosFinanceiros",
+			          "ConceptualProperty": "Tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dados_financeiro.componente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DadosFinanceiros",
+			          "ConceptualProperty": "Componente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "componente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dados_financeiro.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DadosFinanceiros",
+			          "ConceptualProperty": "Data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dados_financeiro.data.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DadosFinanceiros",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dados_financeiro.data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DadosFinanceiros",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dados_financeiro.data.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DadosFinanceiros",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dados_financeiro.data.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DadosFinanceiros",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dados_financeiro.data.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DadosFinanceiros",
+			          "VariationSource": "Data",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dados_financeiro.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DadosFinanceiros",
+			          "ConceptualProperty": "Valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_indicadores_financeiro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MedidasIndicadoresFinanceiros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medidas indicadores financeiro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "medida indicadore financeiro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "MedidasIndicadoresFinanceiros": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_indicadores_financeiro.column": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MedidasIndicadoresFinanceiros",
+			          "ConceptualProperty": "Column"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "column": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pilaster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pillar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "support": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "buttress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "underpinning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_indicadores_financeiro.total_receitas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MedidasIndicadoresFinanceiros",
+			          "ConceptualProperty": "TotalReceitas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total receitas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalReceitas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate receita": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall receita": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Total de Receitas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_indicadores_financeiro.total_despesas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MedidasIndicadoresFinanceiros",
+			          "ConceptualProperty": "TotalDespesas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total despesas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalDespesas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate despesa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall despesa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Total de Despesas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_indicadores_financeiro.lucro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MedidasIndicadoresFinanceiros",
+			          "ConceptualProperty": "Lucro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lucro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_indicadores_financeiro.margem_lucro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MedidasIndicadoresFinanceiros",
+			          "ConceptualProperty": "MargemLucro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "margem lucro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MargemLucro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Margem de Lucro": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medidas_indicadores_financeiro.media_despesas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MedidasIndicadoresFinanceiros",
+			          "ConceptualProperty": "MediaDespesas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "media despesas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MediaDespesas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "dados_financeiro_data_mê_has_dados_financeiro_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro.data.mê": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.mê"
+			          }
+			        },
+			        "dados_financeiro.data.dia": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.mê"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.dia"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dados_financeiro.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_data_trimestre_has_dados_financeiro_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro.data.trimestre": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.trimestre"
+			          }
+			        },
+			        "dados_financeiro.data.mê": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.mê"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dados_financeiro.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_data_ano_has_dados_financeiro_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro.data.ano": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.ano"
+			          }
+			        },
+			        "dados_financeiro.data.trimestre": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.ano"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dados_financeiro.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_data_hierarquia_de_data_has_dados_financeiro_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.hierarquia_de_data"
+			          }
+			        },
+			        "dados_financeiro.data.dia": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_data_hierarquia_de_data_has_dados_financeiro_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.hierarquia_de_data"
+			          }
+			        },
+			        "dados_financeiro.data.mê": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_data_hierarquia_de_data_has_dados_financeiro_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.hierarquia_de_data"
+			          }
+			        },
+			        "dados_financeiro.data.trimestre": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_data_hierarquia_de_data_has_dados_financeiro_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.hierarquia_de_data"
+			          }
+			        },
+			        "dados_financeiro.data.ano": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_data_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro.data": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data"
+			          }
+			        },
+			        "dados_financeiro.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro.data"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_has_medidas_indicadores_financeiro_media_despesas": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro": {
+			          "Target": {
+			            "Entity": "dados_financeiro"
+			          }
+			        },
+			        "medidas_indicadores_financeiro.media_despesas": {
+			          "Target": {
+			            "Entity": "medidas_indicadores_financeiro.media_despesas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro"
+			            },
+			            "Object": {
+			              "Role": "medidas_indicadores_financeiro.media_despesas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dados_financeiros_have_media_despesas"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_has_medidas_indicadores_financeiro_margem_lucro": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro": {
+			          "Target": {
+			            "Entity": "dados_financeiro"
+			          }
+			        },
+			        "medidas_indicadores_financeiro.margem_lucro": {
+			          "Target": {
+			            "Entity": "medidas_indicadores_financeiro.margem_lucro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro"
+			            },
+			            "Object": {
+			              "Role": "medidas_indicadores_financeiro.margem_lucro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dados_financeiros_have_margem_lucro"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_has_medidas_indicadores_financeiro_lucro": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro": {
+			          "Target": {
+			            "Entity": "dados_financeiro"
+			          }
+			        },
+			        "medidas_indicadores_financeiro.lucro": {
+			          "Target": {
+			            "Entity": "medidas_indicadores_financeiro.lucro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro"
+			            },
+			            "Object": {
+			              "Role": "medidas_indicadores_financeiro.lucro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dados_financeiros_have_lucro"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_has_medidas_indicadores_financeiro_total_despesas": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro": {
+			          "Target": {
+			            "Entity": "dados_financeiro"
+			          }
+			        },
+			        "medidas_indicadores_financeiro.total_despesas": {
+			          "Target": {
+			            "Entity": "medidas_indicadores_financeiro.total_despesas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro"
+			            },
+			            "Object": {
+			              "Role": "medidas_indicadores_financeiro.total_despesas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dados_financeiros_have_total_despesas"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_has_medidas_indicadores_financeiro_total_receitas": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro": {
+			          "Target": {
+			            "Entity": "dados_financeiro"
+			          }
+			        },
+			        "medidas_indicadores_financeiro.total_receitas": {
+			          "Target": {
+			            "Entity": "medidas_indicadores_financeiro.total_receitas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro"
+			            },
+			            "Object": {
+			              "Role": "medidas_indicadores_financeiro.total_receitas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dados_financeiros_have_total_receitas"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro": {
+			          "Target": {
+			            "Entity": "dados_financeiro"
+			          }
+			        },
+			        "dados_financeiro.valor": {
+			          "Target": {
+			            "Entity": "dados_financeiro.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dados_financeiros_have_valor"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro": {
+			          "Target": {
+			            "Entity": "dados_financeiro"
+			          }
+			        },
+			        "dados_financeiro.data": {
+			          "Target": {
+			            "Entity": "dados_financeiro.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dados_financeiros_have_data"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_has_componente": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro": {
+			          "Target": {
+			            "Entity": "dados_financeiro"
+			          }
+			        },
+			        "dados_financeiro.componente": {
+			          "Target": {
+			            "Entity": "dados_financeiro.componente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.componente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dados_financeiros_have_componentes"
+			        }
+			      ]
+			    },
+			    "dados_financeiro_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "DadosFinanceiros"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dados_financeiro": {
+			          "Target": {
+			            "Entity": "dados_financeiro"
+			          }
+			        },
+			        "dados_financeiro.tipo": {
+			          "Target": {
+			            "Entity": "dados_financeiro.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dados_financeiro"
+			            },
+			            "Object": {
+			              "Role": "dados_financeiro.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dados_financeiros_have_tipos"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

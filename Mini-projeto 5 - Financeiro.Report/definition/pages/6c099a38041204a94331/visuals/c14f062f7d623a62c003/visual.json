@@ -3,9 +3,9 @@
   "name": "c14f062f7d623a62c003",
   "position": {
     "x": 0,
-    "y": 331.99904466204919,
+    "y": 401.70050155242416,
     "z": 2000,
-    "height": 132.06591831860521,
+    "height": 172.41939336040124,
     "width": 280.64007642703609,
     "tabOrder": 2000
   },
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "MedidasIndicadoresFinanceiros.MargemLucro",
-              "nativeQueryRef": "MargemLucro"
+              "nativeQueryRef": "Margem de Lucro",
+              "displayName": "Margem de Lucro"
             }
           ]
         }
@@ -50,6 +51,47 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "27D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   }
