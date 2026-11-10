@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "a3693ded718118ec6044",
+  "position": {
+    "x": 0,
+    "y": 155.91115357057561,
+    "z": 1000,
+    "height": 132.06591831860521,
+    "width": 280.64007642703609,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MedidasIndicadoresFinanceiros"
+                    }
+                  },
+                  "Property": "TotalDespesas"
+                }
+              },
+              "queryRef": "MedidasIndicadoresFinanceiros.TotalDespesas",
+              "nativeQueryRef": "TotalDespesas"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "MedidasIndicadoresFinanceiros"
+                  }
+                },
+                "Property": "TotalDespesas"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "56c065fa0acc860b4296",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "MedidasIndicadoresFinanceiros"
+              }
+            },
+            "Property": "TotalDespesas"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

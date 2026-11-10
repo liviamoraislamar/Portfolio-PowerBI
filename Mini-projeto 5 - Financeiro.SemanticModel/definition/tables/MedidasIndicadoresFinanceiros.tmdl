@@ -1,0 +1,45 @@
+table MedidasIndicadoresFinanceiros
+	lineageTag: 22c0ce0d-0720-4b37-b831-103d8ee599c3
+
+	measure TotalReceitas = CALCULATE(SUM(DadosFinanceiros[Valor]),DadosFinanceiros[Tipo]="Receitas")
+		lineageTag: 3df8f39f-c94b-4137-97ab-1b613fb14ea3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure TotalDespesas = CALCULATE(SUM(DadosFinanceiros[Valor]),DadosFinanceiros[Tipo]="Despesas")
+		lineageTag: bbfdd5e4-2325-429b-b950-86b0a27d3a9e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Lucro = [TotalReceitas]-[TotalDespesas]
+		lineageTag: 0a27b120-b7c1-4bd7-bb99-f4c7af31aac0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure MargemLucro = DIVIDE([Lucro],[TotalReceitas],0)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 956889a8-7d0d-4f5c-9eea-b7675ab96154
+
+	measure MediaDespesas = CALCULATE(AVERAGE(DadosFinanceiros[Valor]), DadosFinanceiros[Tipo]="Despesas")
+		lineageTag: fb25f7b2-549c-4948-b202-6e302e736a6c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		isHidden
+		formatString: 0
+		lineageTag: 76a11813-ccdc-4388-b150-40dde339ee06
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MedidasIndicadoresFinanceiros = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = dfac7b1201dc4a5b8d6e81c259e6af87
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

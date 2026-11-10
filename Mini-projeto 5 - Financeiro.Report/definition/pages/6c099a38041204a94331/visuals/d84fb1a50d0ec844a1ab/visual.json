@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "d84fb1a50d0ec844a1ab",
+  "position": {
+    "x": 625.47886314783852,
+    "y": 539.26916646763789,
+    "z": 4000,
+    "height": 515.42393121566761,
+    "width": 506.25268688798661,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "areaChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DadosFinanceiros"
+                    }
+                  },
+                  "Property": "Componente"
+                }
+              },
+              "queryRef": "DadosFinanceiros.Componente",
+              "nativeQueryRef": "Componente",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MedidasIndicadoresFinanceiros"
+                    }
+                  },
+                  "Property": "TotalDespesas"
+                }
+              },
+              "queryRef": "MedidasIndicadoresFinanceiros.TotalDespesas",
+              "nativeQueryRef": "TotalDespesas"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "MedidasIndicadoresFinanceiros"
+                  }
+                },
+                "Property": "TotalDespesas"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5b8b86808d92717508a0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DadosFinanceiros"
+              }
+            },
+            "Property": "Componente"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "76a9662f0424946ec0ab",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "MedidasIndicadoresFinanceiros"
+              }
+            },
+            "Property": "TotalDespesas"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

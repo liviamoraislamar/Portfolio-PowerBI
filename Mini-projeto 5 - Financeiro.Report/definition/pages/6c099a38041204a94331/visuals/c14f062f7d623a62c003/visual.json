@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "c14f062f7d623a62c003",
+  "position": {
+    "x": 0,
+    "y": 331.99904466204919,
+    "z": 2000,
+    "height": 132.06591831860521,
+    "width": 280.64007642703609,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MedidasIndicadoresFinanceiros"
+                    }
+                  },
+                  "Property": "MargemLucro"
+                }
+              },
+              "queryRef": "MedidasIndicadoresFinanceiros.MargemLucro",
+              "nativeQueryRef": "MargemLucro"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "MedidasIndicadoresFinanceiros"
+                  }
+                },
+                "Property": "MargemLucro"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

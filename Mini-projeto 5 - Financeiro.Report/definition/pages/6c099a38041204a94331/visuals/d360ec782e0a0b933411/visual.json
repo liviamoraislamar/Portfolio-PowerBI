@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "d360ec782e0a0b933411",
+  "position": {
+    "x": 0,
+    "y": 539.26916646763789,
+    "z": 3000,
+    "height": 515.42393121566761,
+    "width": 603.46787676140434,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DadosFinanceiros"
+                    }
+                  },
+                  "Property": "Componente"
+                }
+              },
+              "queryRef": "DadosFinanceiros.Componente",
+              "nativeQueryRef": "Componente",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MedidasIndicadoresFinanceiros"
+                    }
+                  },
+                  "Property": "TotalReceitas"
+                }
+              },
+              "queryRef": "MedidasIndicadoresFinanceiros.TotalReceitas",
+              "nativeQueryRef": "TotalReceitas"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "MedidasIndicadoresFinanceiros"
+                  }
+                },
+                "Property": "TotalReceitas"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "49daf14742865e272e6d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "MedidasIndicadoresFinanceiros"
+              }
+            },
+            "Property": "TotalReceitas"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2f90f7e0e9b5237db35a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DadosFinanceiros"
+              }
+            },
+            "Property": "Componente"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

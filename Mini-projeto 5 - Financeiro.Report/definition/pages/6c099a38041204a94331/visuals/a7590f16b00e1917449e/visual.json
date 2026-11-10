@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "a7590f16b00e1917449e",
+  "position": {
+    "x": 1700.1772223990351,
+    "y": 37.049866831940236,
+    "z": 4001,
+    "height": 279.93232717465952,
+    "width": 199.6576157054557,
+    "tabOrder": 4001
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MedidasIndicadoresFinanceiros"
+                    }
+                  },
+                  "Property": "MediaDespesas"
+                }
+              },
+              "queryRef": "MedidasIndicadoresFinanceiros.MediaDespesas",
+              "nativeQueryRef": "MediaDespesas"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "MedidasIndicadoresFinanceiros"
+                  }
+                },
+                "Property": "MediaDespesas"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "727e6195ee45b419de93",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "MedidasIndicadoresFinanceiros"
+              }
+            },
+            "Property": "MediaDespesas"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

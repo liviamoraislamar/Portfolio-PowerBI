@@ -16,6 +16,7 @@ annotation PBI_ProTooling = ["DevMode"]
 ref table DadosFinanceiros
 ref table DateTableTemplate_e8c1bab2-ab4c-4556-9ef2-b5221dd8437e
 ref table LocalDateTable_7c67e02b-0727-45fa-ad1e-08a0a050d60c
+ref table MedidasIndicadoresFinanceiros
 
 ref cultureInfo pt-BR
 
