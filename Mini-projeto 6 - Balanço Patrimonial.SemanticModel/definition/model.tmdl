@@ -1,0 +1,20 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["PlanoContas","DadosContabeis"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table PlanoContas
+ref table DadosContabeis
+
+ref cultureInfo pt-BR
+

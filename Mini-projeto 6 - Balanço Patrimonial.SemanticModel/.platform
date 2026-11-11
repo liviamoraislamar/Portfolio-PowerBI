@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Mini-projeto 6 - Balanço Patrimonial"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4f021df8-e4fb-4ce6-bcea-81485684650d"
+  }
+}

@@ -1,0 +1,6 @@
+relationship AutoDetected_314e76de-5a17-48c1-884d-9555aa953512
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: DadosContabeis.ID_Conta
+	toColumn: PlanoContas.ID_Conta
+
