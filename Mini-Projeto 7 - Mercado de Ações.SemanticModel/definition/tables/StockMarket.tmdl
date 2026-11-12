@@ -1,0 +1,114 @@
+table StockMarket
+	lineageTag: b1274600-5537-4aae-af48-9c0353d2e46b
+
+	measure 'Média de Close MoM%' =
+			
+			IF(
+				ISFILTERED('StockMarket'[Data]),
+				ERROR("Medidas rápidas de inteligência de tempo somente podem ser agrupadas ou filtradas pela hierarquia de data fornecida pelo Power BI ou pela coluna de data primária."),
+				VAR __PREV_MONTH =
+					CALCULATE(
+						AVERAGE('StockMarket'[Close]),
+						DATEADD('StockMarket'[Data].[Date], -1, MONTH)
+					)
+				RETURN
+					DIVIDE(AVERAGE('StockMarket'[Close]) - __PREV_MONTH, __PREV_MONTH)
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 6a97c9d1-a073-45c7-821b-82a9553a0baa
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "MonthOverMonth"
+				}
+
+		changedProperty = FormatString
+
+	column Empresa
+		dataType: string
+		lineageTag: 2f24ee23-fca0-4b44-8dd2-1acfb87fb50d
+		summarizeBy: none
+		sourceColumn: Empresa
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 520c22c8-46b8-4f06-b69f-e7088dac9085
+		summarizeBy: none
+		sourceColumn: Data
+
+		variation Variação
+			isDefault
+			relationship: b21ccd71-b6e2-4c8d-abb8-fe2c0657c6f1
+			defaultHierarchy: LocalDateTable_74b4c28b-e0fb-44df-8e57-ef0663e2ce5a.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Close
+		dataType: double
+		lineageTag: c7f2260c-8b2f-4b62-b907-df09e55f215d
+		summarizeBy: sum
+		sourceColumn: Close
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Volume
+		dataType: int64
+		formatString: 0
+		lineageTag: 77f734fb-c3c0-42fa-bb47-8122ce809440
+		summarizeBy: sum
+		sourceColumn: Volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column Open
+		dataType: double
+		lineageTag: 675187fc-be07-462a-9ccd-c98f7f400ede
+		summarizeBy: sum
+		sourceColumn: Open
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column High
+		dataType: double
+		lineageTag: 352ce6ba-c9d0-414f-add4-eff71a6d0614
+		summarizeBy: sum
+		sourceColumn: High
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Low
+		dataType: double
+		lineageTag: 0695e377-d71e-4787-b4d8-16526ced5c72
+		summarizeBy: sum
+		sourceColumn: Low
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition StockMarket = m
+		mode: import
+		source =
+				let
+				  Origem = Excel.Workbook(File.Contents("C:\Users\livia\Documents\Curso de PowerBI\Aulas DataScience Academy\StockMarket\StockMarket.xlsx"), null, true),
+				  #"Navegação 1" = Origem{[Item = "StockMarket", Kind = "Sheet"]}[Data],
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"Navegação 1", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"Empresa", type text}, {"Data", type text}, {"Close", type number}, {"Volume", Int64.Type}, {"Open", type number}, {"High", type number}, {"Low", type number}}),
+				  #"O tipo de coluna foi alterado com a localidade" = Table.TransformColumnTypes(#"Tipo de coluna alterado", {{"Data", type date}}, "en-US")
+				in
+				  #"O tipo de coluna foi alterado com a localidade"
+
+	annotation PBI_ResultType = Table
+
