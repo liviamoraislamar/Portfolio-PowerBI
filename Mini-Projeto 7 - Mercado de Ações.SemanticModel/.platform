@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Mini-Projeto 7 - Mercado de Ações"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4176e0c1-3d0c-426e-bf0f-b5117150f56f"
+  }
+}
