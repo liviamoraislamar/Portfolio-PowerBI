@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Limpeza de Dados com Liguagem M"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5a870a8e-b93a-4379-a9cf-b1496b58210b"
+  }
+}

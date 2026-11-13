@@ -1,0 +1,103 @@
+table Clientes
+	lineageTag: 691b56f2-4928-445d-9c83-fc6b495888ca
+
+	column ID_Cliente
+		dataType: string
+		lineageTag: dac01efa-a133-473f-bb46-17237ca8aff4
+		summarizeBy: none
+		sourceColumn: ID_Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column Idade
+		dataType: int64
+		formatString: 0
+		lineageTag: e481535f-fc5e-4352-98ed-c03d73e5d96d
+		summarizeBy: sum
+		sourceColumn: Idade
+
+		annotation SummarizationSetBy = Automatic
+
+	column Peso
+		dataType: int64
+		formatString: 0
+		lineageTag: 521ff8e5-f058-47f4-9a5f-14433531d8e1
+		summarizeBy: sum
+		sourceColumn: Peso
+
+		annotation SummarizationSetBy = Automatic
+
+	column Altura
+		dataType: int64
+		formatString: 0
+		lineageTag: c781251d-ba15-4ac6-b141-238b0031ecd0
+		summarizeBy: sum
+		sourceColumn: Altura
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado
+		dataType: string
+		lineageTag: aacbbaa4-bd34-4684-9a4f-9eb00c3c0601
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Limite de Credito'
+		dataType: int64
+		formatString: 0
+		lineageTag: a275f07d-0cbd-4750-b055-23405d75f590
+		summarizeBy: sum
+		sourceColumn: Limite de Credito
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Desconto'
+		dataType: int64
+		formatString: 0
+		lineageTag: 957b949e-9570-4219-ab09-5b7f1bcfbefc
+		summarizeBy: sum
+		sourceColumn: Valor Desconto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Compra'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ffb320f-9317-41c9-bf5b-60f09b4c3752
+		summarizeBy: sum
+		sourceColumn: Valor Compra
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Cliente'
+		dataType: string
+		lineageTag: 0427c5c3-2485-46e9-b35e-e80257c7d1f9
+		summarizeBy: none
+		sourceColumn: Tipo de Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Clientes = m
+		mode: import
+		source = ```
+				let
+				  Origem = Csv.Document(File.Contents("C:\Users\livia\Documents\Curso de PowerBI\Aulas DataScience Academy\Lab05 - Clientes - Linguagem M\Clientes.csv"), [Delimiter = ",", Columns = 10, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(Origem, [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"ID_Cliente", type text}, {"Idade", type text}, {"Peso", Int64.Type}, {"Altura", Int64.Type}, {"Estado Civil", type text}, {"Estado", type text}, {"Limite de Credito", Int64.Type}, {"Valor Desconto", Int64.Type}, {"Valor Compra", Int64.Type}, {"Tipo de Cliente", type text}}),
+				
+				  //Substituindo valor 
+				  #"Valor Substituido" = Table.ReplaceValue(#"Tipo de coluna alterado", "?", "45", Replacer.ReplaceText, {"Idade"}),
+				
+				  //Transformando tipo texto para inteiro
+				  #"Tipo de coluna alterado 1" = Table.TransformColumnTypes(#"Valor Substituido", {{"Idade", Int64.Type}}),
+				
+				  //Removendo coluna
+				  #"Coluna Removida" = Table.RemoveColumns(#"Tipo de coluna alterado 1",{"Estado Civil"})
+				in
+				  #"Coluna Removida"
+				```
+
+	annotation PBI_ResultType = Table
+
