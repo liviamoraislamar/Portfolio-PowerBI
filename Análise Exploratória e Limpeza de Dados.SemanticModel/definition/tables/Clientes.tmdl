@@ -64,7 +64,7 @@ table Clientes
 		annotation SummarizationSetBy = Automatic
 
 	column Altura
-		dataType: int64
+		dataType: double
 		formatString: 0
 		lineageTag: 245d3182-1c17-4c1e-b2cd-2e255e592a5e
 		summarizeBy: sum
@@ -131,9 +131,12 @@ table Clientes
 				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"ID_Cliente", Int64.Type}, {"Idade", Int64.Type}, {"Peso", Int64.Type}, {"Altura", Int64.Type}, {"Estado Civil", type text}, {"Cidade", type text}, {"Estado", type text}, {"Limite de Crédito", Int64.Type}, {"Taxa de Desconto", Int64.Type}, {"Tipo de Cliente", type text}}),
 				  #"Duplicatas removidas" = Table.Distinct(#"Tipo de coluna alterado", {"ID_Cliente"}),
 				  #"Valor substituído" = Table.ReplaceValue(#"Duplicatas removidas", null, 70, Replacer.ReplaceValue, {"Peso"}),
-				  #"Valor substituído 1" = Table.ReplaceValue(#"Valor substituído", null, 40, Replacer.ReplaceValue, {"Idade"})
+				  #"Valor substituído 1" = Table.ReplaceValue(#"Valor substituído", null, 40, Replacer.ReplaceValue, {"Idade"}),
+				  #"Linhas classificadas" = Table.Sort(#"Valor substituído 1", {{"Altura", Order.Descending}}),
+				  #"Valor substituído 2" = Table.ReplaceValue(#"Linhas classificadas", 270, 172, Replacer.ReplaceValue, {"Altura"}),
+				  #"Valor substituído 3" = Table.ReplaceValue(#"Valor substituído 2", 278, 172, Replacer.ReplaceValue, {"Altura"})
 				in
-				  #"Valor substituído 1"
+				  #"Valor substituído 3"
 
 	annotation PBI_ResultType = Table
 
