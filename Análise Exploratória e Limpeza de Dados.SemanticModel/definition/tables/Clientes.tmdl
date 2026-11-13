@@ -11,7 +11,7 @@ table Clientes
 		annotation SummarizationSetBy = Automatic
 
 	column Idade
-		dataType: int64
+		dataType: double
 		formatString: 0
 		lineageTag: 44aeb6fa-f607-4074-bdeb-b675444c9602
 		summarizeBy: sum
@@ -20,7 +20,7 @@ table Clientes
 		annotation SummarizationSetBy = Automatic
 
 	column Peso
-		dataType: int64
+		dataType: double
 		formatString: 0
 		lineageTag: 4ee41cd4-b219-4aa4-b989-b9eaf6d8733c
 		summarizeBy: sum
@@ -94,9 +94,11 @@ table Clientes
 				  Origem = Csv.Document(File.Contents("C:\Users\livia\Documents\Curso de PowerBI\Aulas DataScience Academy\Clientes - limpeza de dados\Clientes.csv"), [Delimiter = ",", Columns = 10, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
 				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(Origem, [PromoteAllScalars = true]),
 				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"ID_Cliente", Int64.Type}, {"Idade", Int64.Type}, {"Peso", Int64.Type}, {"Altura", Int64.Type}, {"Estado Civil", type text}, {"Cidade", type text}, {"Estado", type text}, {"Limite de Crédito", Int64.Type}, {"Taxa de Desconto", Int64.Type}, {"Tipo de Cliente", type text}}),
-				  #"Duplicatas removidas" = Table.Distinct(#"Tipo de coluna alterado", {"ID_Cliente"})
+				  #"Duplicatas removidas" = Table.Distinct(#"Tipo de coluna alterado", {"ID_Cliente"}),
+				  #"Valor substituído" = Table.ReplaceValue(#"Duplicatas removidas", null, 70, Replacer.ReplaceValue, {"Peso"}),
+				  #"Valor substituído 1" = Table.ReplaceValue(#"Valor substituído", null, 40, Replacer.ReplaceValue, {"Idade"})
 				in
-				  #"Duplicatas removidas"
+				  #"Valor substituído 1"
 
 	annotation PBI_ResultType = Table
 

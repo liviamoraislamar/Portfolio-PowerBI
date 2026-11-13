@@ -1,0 +1,246 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "644507a81a0d360b4737",
+  "position": {
+    "x": 30.874889026616859,
+    "y": 263.46571969379721,
+    "z": 1,
+    "height": 150.25779326286872,
+    "width": 1060.0378565805122,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Clientes"
+                        }
+                      },
+                      "Property": "Idade"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Sum(Clientes.Idade)",
+              "nativeQueryRef": "Mínimo de Idade"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Clientes"
+                        }
+                      },
+                      "Property": "Idade"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(Clientes.Idade)",
+              "nativeQueryRef": "Média de Idade"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Clientes"
+                        }
+                      },
+                      "Property": "Idade"
+                    }
+                  },
+                  "Function": 7
+                }
+              },
+              "queryRef": "Sum(Clientes.Idade)1",
+              "nativeQueryRef": "Desvio padrão de Idade"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Clientes"
+                        }
+                      },
+                      "Property": "Idade"
+                    }
+                  },
+                  "Function": 4
+                }
+              },
+              "queryRef": "Sum(Clientes.Idade)2",
+              "nativeQueryRef": "Máximo de Idade"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Clientes"
+                        }
+                      },
+                      "Property": "Idade"
+                    }
+                  },
+                  "Function": 6
+                }
+              },
+              "queryRef": "Sum(Clientes.Idade)3",
+              "nativeQueryRef": "Mediana de Idade"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "17D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "17D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2de17dbc52111a734bc0",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Clientes"
+                  }
+                },
+                "Property": "Idade"
+              }
+            },
+            "Function": 3
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "676f1d0420049d2c6a14",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Clientes"
+                  }
+                },
+                "Property": "Idade"
+              }
+            },
+            "Function": 1
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e4362f654d008208054c",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Clientes"
+                  }
+                },
+                "Property": "Idade"
+              }
+            },
+            "Function": 7
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "fd5d371c914a137508e7",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Clientes"
+                  }
+                },
+                "Property": "Idade"
+              }
+            },
+            "Function": 4
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6d73bc4c383114660d10",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Clientes"
+                  }
+                },
+                "Property": "Idade"
+              }
+            },
+            "Function": 6
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
