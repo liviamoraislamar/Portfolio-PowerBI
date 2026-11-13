@@ -1,0 +1,147 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "ba7f892fe4a99bad67c5",
+  "position": {
+    "x": 30.874889026616859,
+    "y": 687.48086232600212,
+    "z": 5000,
+    "height": 150.25779326286872,
+    "width": 1060.0378565805122,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Clientes"
+                        }
+                      },
+                      "Property": "Altura"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(Clientes.Altura)",
+              "nativeQueryRef": "Mínimo de Altura"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Clientes"
+                        }
+                      },
+                      "Property": "Altura"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(Clientes.Altura)",
+              "nativeQueryRef": "Média de Altura"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Clientes"
+                        }
+                      },
+                      "Property": "Altura"
+                    }
+                  },
+                  "Function": 7
+                }
+              },
+              "queryRef": "StandardDeviation(Clientes.Altura)",
+              "nativeQueryRef": "Desvio padrão de Altura"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Clientes"
+                        }
+                      },
+                      "Property": "Altura"
+                    }
+                  },
+                  "Function": 4
+                }
+              },
+              "queryRef": "Max(Clientes.Altura)",
+              "nativeQueryRef": "Máximo de Altura"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Clientes"
+                        }
+                      },
+                      "Property": "Altura"
+                    }
+                  },
+                  "Function": 6
+                }
+              },
+              "queryRef": "Sum(Clientes.Altura)",
+              "nativeQueryRef": "Mediana de Altura"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "17D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "17D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

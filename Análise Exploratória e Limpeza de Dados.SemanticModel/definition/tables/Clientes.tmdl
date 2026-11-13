@@ -1,6 +1,41 @@
 table Clientes
 	lineageTag: 2d3cd055-d990-4fa7-94f8-97f53309289d
 
+	measure MediaAltura = AVERAGE(Clientes[Altura])
+		lineageTag: 15ea7601-c8ef-4f33-acd8-f6dffaeccca8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure MedianaAltura = MEDIAN(Clientes[Altura])
+		lineageTag: de4b3cd9-d28b-43e6-aa57-991c5f69bf91
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Q1Altura = PERCENTILE.INC(Clientes[Altura],0.25)
+		lineageTag: 3ea41254-1930-42f7-a3fe-1c472c44ec9e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Q3Altura = PERCENTILE.INC(Clientes[Altura],0.75)
+		lineageTag: 742c9024-99c8-4c0d-bad0-6d20819d3159
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IQR.Altura' = [Q3Altura]-[Q1Altura]
+		lineageTag: 9ba77ea4-95c1-46e8-a1a6-efdef9021dd4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure LimInfAltura = [Q1Altura]-1.5*[IQR.Altura]
+		lineageTag: 924bc1c8-670a-4ef7-97d1-1928ac16e10f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure LimSupAltura = [Q3Altura]+1.5*[IQR.Altura]
+		lineageTag: 43675374-982c-449e-b44c-99960575d798
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column ID_Cliente
 		dataType: int64
 		formatString: 0

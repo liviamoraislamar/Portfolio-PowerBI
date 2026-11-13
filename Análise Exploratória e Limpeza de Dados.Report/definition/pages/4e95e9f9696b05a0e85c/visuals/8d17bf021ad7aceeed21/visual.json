@@ -6,7 +6,7 @@
     "y": 53.516474312802558,
     "z": 0,
     "height": 137.90783765222199,
-    "width": 549.57302467378008,
+    "width": 671.01425484513982,
     "tabOrder": 0
   },
   "visual": {
@@ -51,10 +51,33 @@
                 }
               },
               "queryRef": "Sum(Clientes.ID_Cliente)",
-              "nativeQueryRef": "Contagem de ID_Cliente1"
+              "nativeQueryRef": "Contagem Distinta de ID_Cliente",
+              "displayName": "Contagem Distinta de ID_Cliente"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Clientes"
+                      }
+                    },
+                    "Property": "ID_Cliente"
+                  }
+                },
+                "Function": 2
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "objects": {
@@ -86,47 +109,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "74c8f67322c17dbda4c3",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Clientes"
-                  }
-                },
-                "Property": "ID_Cliente"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "de5fb28f01d04b219eee",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Clientes"
-                  }
-                },
-                "Property": "ID_Cliente"
-              }
-            },
-            "Function": 2
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
