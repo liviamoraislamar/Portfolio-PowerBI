@@ -1,0 +1,101 @@
+table Clientes
+	lineageTag: 2d3cd055-d990-4fa7-94f8-97f53309289d
+
+	column ID_Cliente
+		dataType: int64
+		formatString: 0
+		lineageTag: d3e4096c-eb25-409f-bb18-510788931bf3
+		summarizeBy: sum
+		sourceColumn: ID_Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column Idade
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f610577-8c3b-4354-85ca-0d979e9939f4
+		summarizeBy: sum
+		sourceColumn: Idade
+
+		annotation SummarizationSetBy = Automatic
+
+	column Peso
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d0e9684-d307-4c3b-bad5-af97c825a93e
+		summarizeBy: sum
+		sourceColumn: Peso
+
+		annotation SummarizationSetBy = Automatic
+
+	column Altura
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ac599bf-69ba-4f77-a469-65d693bb95f3
+		summarizeBy: sum
+		sourceColumn: Altura
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado Civil'
+		dataType: string
+		lineageTag: 35f51ce0-0c4e-4bfe-a614-0766f3748966
+		summarizeBy: none
+		sourceColumn: Estado Civil
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cidade
+		dataType: string
+		lineageTag: a1fc608a-f973-40d2-aa85-5538d98bc42a
+		summarizeBy: none
+		sourceColumn: Cidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado
+		dataType: string
+		lineageTag: 9d6363e4-d9c3-49d3-9fc6-6914d364fb9c
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Limite de Crédito'
+		dataType: int64
+		formatString: 0
+		lineageTag: d28459f8-f490-4af7-8f08-d4dd8084ce33
+		summarizeBy: sum
+		sourceColumn: Limite de Crédito
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Taxa de Desconto'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f8d1693-dc29-4e4d-a335-4d8e3bc1e9b7
+		summarizeBy: sum
+		sourceColumn: Taxa de Desconto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Cliente'
+		dataType: string
+		lineageTag: fcae4d78-c584-45a3-b793-bceb80b48c7d
+		summarizeBy: none
+		sourceColumn: Tipo de Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Clientes = m
+		mode: import
+		source =
+				let
+				  Origem = Csv.Document(File.Contents("C:\Users\livia\Documents\Curso de PowerBI\Aulas DataScience Academy\Clientes - limpeza de dados\Clientes.csv"), [Delimiter = ",", Columns = 10, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(Origem, [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"ID_Cliente", Int64.Type}, {"Idade", Int64.Type}, {"Peso", Int64.Type}, {"Altura", Int64.Type}, {"Estado Civil", type text}, {"Cidade", type text}, {"Estado", type text}, {"Limite de Crédito", Int64.Type}, {"Taxa de Desconto", Int64.Type}, {"Tipo de Cliente", type text}})
+				in
+				  #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

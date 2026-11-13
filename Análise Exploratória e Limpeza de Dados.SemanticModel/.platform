@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Análise Exploratória e Limpeza de Dados"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "15f32cba-61ba-4082-a4ae-86c12ee3e6a6"
+  }
+}

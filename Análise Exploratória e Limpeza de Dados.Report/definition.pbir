@@ -1,0 +1,8 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Análise Exploratória e Limpeza de Dados.SemanticModel"
+    }
+  }
+}
